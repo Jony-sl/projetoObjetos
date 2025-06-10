@@ -19,11 +19,7 @@ sistema assim como os atores envolvidos
 
 
 
-
-
-![Diagrama casos de usos](https://github.com/user-attachments/assets/bf41f219-af65-4388-b27f-795a1c2bb4e2)
-
-
+<img src="https://github.com/user-attachments/assets/bf41f219-af65-4388-b27f-795a1c2bb4e2" alt="Diagrama casos de usos">
 
 
 
