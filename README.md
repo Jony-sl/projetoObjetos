@@ -4,7 +4,7 @@
 
 #  Gerador de Dados de Ativos (GDA)
 
-## << Descrição breve do domínio do problema >>
+## Projeto com o objetivo de desenvolver um programa que gere gráficos de evolução de mercado de certos ativos.
 
 > Repositório destinado para o desenvolvimento do projeto final da disciplina 
 > PRG22107 - Programação orientada objeto. 
