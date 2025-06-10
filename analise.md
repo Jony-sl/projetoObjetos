@@ -12,7 +12,7 @@ O sistema deverá oferecer uma seleção de ativos para o usuário que ao seleci
 
 ## Diagrama de Casos de Uso
 
-<img src="Diagrama casos de usos.jpeg" 
+<img src="diagrama_casos_de_usos.jpeg" 
      width="30%" 
      style="padding: 10px">
  
