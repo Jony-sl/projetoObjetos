@@ -9,7 +9,7 @@
 > Repositório destinado para o desenvolvimento do projeto final da disciplina 
 > PRG22107 - Programação orientada objeto. 
 > 
-> Aluno: << Nome do aluno >>  
+> Aluno: Jony Soares Leal Junior  
 > Professor: Hugo Marcondes
 
 <p align=center><strong>SUMÁRIO</strong></p>
