@@ -12,7 +12,9 @@ O sistema deverá oferecer uma seleção de ativos para o usuário que ao seleci
 
 ## Diagrama de Casos de Uso
 
-<img src="https://github.com/user-attachments/assets/bf41f219-af65-4388-b27f-795a1c2bb4e2" alt="Diagrama casos de usos">
+<img src="Diagrama casos de usos.jpeg" 
+     width="30%" 
+     style="padding: 10px">
  
 ## Diagrama de Domínio do problema
 
