@@ -13,12 +13,14 @@ O sistema deverá oferecer uma seleção de ativos para o usuário que ao seleci
 ## Diagrama de Casos de Uso
 
 <img src="https://github.com/user-attachments/assets/bf41f219-af65-4388-b27f-795a1c2bb4e2" 
-     width="30%" 
+     width="50%" 
      style="padding: 10px">
  
 ## Diagrama de Domínio do problema
 
-<img src="https://github.com/user-attachments/assets/3dfb6c84-0339-424d-aa92-68d2f3cddc5a" alt="Diagrama de domínio">
+<img src="https://github.com/user-attachments/assets/3dfb6c84-0339-424d-aa92-68d2f3cddc5a" alt="Diagrama de domínio"
+     width="50%" 
+     style="padding: 10px">
 
 <div align="center">
 
