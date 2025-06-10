@@ -12,22 +12,11 @@ O sistema deverá oferecer uma seleção de ativos para o usuário que ao seleci
 
 ## Diagrama de Casos de Uso
 
-Apresentar o diagram de casos de uso, identificando as funcionalidades do
-sistema assim como os atores envolvidos
-
-
-
-
-
 <img src="https://github.com/user-attachments/assets/bf41f219-af65-4388-b27f-795a1c2bb4e2" alt="Diagrama casos de usos">
-
-
-
  
 ## Diagrama de Domínio do problema
 
-Elaborar um diagrama conceitual do domínio do problema.
-
+<img src="https://github.com/user-attachments/assets/3dfb6c84-0339-424d-aa92-68d2f3cddc5a" alt="Diagrama de domínio">
 
 <div align="center">
 
