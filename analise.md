@@ -6,14 +6,27 @@
 
 ## Descrição Geral do domínio do problema
 
-Descrever de forma geral o domínio do problema.
-
-Possíveis requisitos funcionais e não-funcionais podem ser elencados aqui.
+O proograma visa compilar informações a respeito da variação do valor de ativos financeiros, apresentando dados históricos e gráficos representativos.
+Utilizarei a chave de API Tiingo disponível em <https://www.tiingo.com/>.
+O sistema deverá oferecer uma seleção de ativos para o usuário que ao selecionar o ativo será encaminhado para um gráfico onde ele poderá selecionar o período que deseja visualizar as variações de mercado. O período padrão de visualização ao entrar no gráfico será o do dia atual. 
 
 ## Diagrama de Casos de Uso
 
 Apresentar o diagram de casos de uso, identificando as funcionalidades do
 sistema assim como os atores envolvidos
+
+
+
+
+
+
+
+![Diagrama casos de usos](https://github.com/user-attachments/assets/bf41f219-af65-4388-b27f-795a1c2bb4e2)
+
+
+
+
+
  
 ## Diagrama de Domínio do problema
 
