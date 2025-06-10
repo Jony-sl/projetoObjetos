@@ -2,7 +2,7 @@
      width="30%"
      style="padding: 10px">
 
-# << Título do projeto >>
+# << Gerador de Dados de Ativos (GDA) >>
 
 ## << Descrição breve do domínio do problema >>
 
