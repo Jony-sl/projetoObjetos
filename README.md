@@ -2,7 +2,7 @@
      width="30%"
      style="padding: 10px">
 
-# << Gerador de Dados de Ativos (GDA) >>
+#  Gerador de Dados de Ativos (GDA)
 
 ## << Descrição breve do domínio do problema >>
 
