@@ -15,6 +15,35 @@ O sistema deverá oferecer uma seleção de ativos para o usuário que ao seleci
 <img src="https://github.com/user-attachments/assets/02eea329-8cb7-493f-9d59-d87e910f4479" 
      width="50%" 
      style="padding: 10px">
+
+Caso I:
+     Objetivo: Determinar ativo.
+     Requisitos: - 
+     Atores: Usuário.
+     Pré-condição: - 
+     Condição de entrada: O usuário seleciona a opção de ativo.
+     Fluxo principal: - O sistema apresenta uma lista de ativos.
+                      - O usuário seleciona o ativo desejado.
+
+Caso II:
+     Objetivo: Gerar gráfico solicitado.
+     Requisitos: Determinar ativo.
+     Atores: Data Source (DS).
+     Pré-condição: Usuário ter selecionado o ativo.
+     Condição de entrada: O sistema enviar a solicitação para o DS.
+     Fluxo principal: - Sistema faz a solicitação de dados.
+                      - Padrão de período será dia atual, sendo o período alterado apenas no Caso III.
+                      - DS retorna dados do ativo solicitado.
+                      - Sistema gera e exibe o gráfico.
+
+Caso III:
+     Objetivo: Alterar o período do gráfico exibido.
+     Requisitos: Tela do gráfico estar aberta.
+     Atores: Usuário.
+     Pré-condição: Ter gerado um gráfico.
+     Condição de entrada: Usuário selecionar outro período.
+     Fluxo principal: - Usuário seleciona o período desejado.
+                      - Sistema retorna ao Caso II com um novo período.
  
 ## Diagrama de Domínio do problema
 
