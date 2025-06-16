@@ -12,7 +12,7 @@ O sistema deverá oferecer uma seleção de ativos para o usuário que ao seleci
 
 ## Diagrama de Casos de Uso
 
-<img src="https://github.com/user-attachments/assets/bf41f219-af65-4388-b27f-795a1c2bb4e2" 
+<img src="https://github.com/user-attachments/assets/02eea329-8cb7-493f-9d59-d87e910f4479" 
      width="50%" 
      style="padding: 10px">
  
