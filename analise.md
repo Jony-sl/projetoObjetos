@@ -24,6 +24,12 @@ O sistema deverá oferecer uma seleção de ativos para o usuário que ao seleci
 
 <div align="center">
 
+## Diagrama de Sequência
+
+<img src="https://github.com/user-attachments/assets/45567248-659e-403c-af6a-aff98e38fe07" alt="Diagrama de domínio"
+     width="50%" 
+     style="padding: 10px">
+
 [Retroceder](README.md) | [Avançar](projeto.md)
 
 </div>
