@@ -15,7 +15,7 @@
      <ul>Fluxo principal:
                        <ol> <ul>- O sistema apresenta uma lista de ativos.</ul>
                             <ul>- O usuário seleciona o ativo desejado.</ul></ol>
-
+     </ul>
 <p><strong>Caso II:</strong></p>
      <ul>Objetivo: Gerar gráfico solicitado.</ul>
      <ul>Requisitos: Determinar ativo.</ul>
