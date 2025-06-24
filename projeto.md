@@ -45,6 +45,13 @@
      width="50%" 
      style="padding: 10px">
 </p>
+## Diagrama de Classes
+<p align="left">
+    <img src="https://github.com/user-attachments/assets/c29391fc-50e3-46a5-a359-7e2028bc83c4" alt="Diagrama de Classes"
+     width="50%" 
+     style="padding: 10px">
+</p>
+
 
 
 <div align="center">
