@@ -21,13 +21,13 @@
      <ul>Requisitos: Determinar ativo.</ul>
      <ul>Atores: Data Source (DS).</ul>
      <ul>Pré-condição: Usuário ter selecionado o ativo.</ul>
-     <ul>Condição de entrada: O sistema enviar a solicitação para o DS.
+     <ul>Condição de entrada: O sistema enviar a solicitação para o DS.</ul>
      <ul>Fluxo principal:
                       <ol><ul>- Sistema faz a solicitação de dados.</ul>
                           <ul>- Padrão de período será dia atual, sendo o período alterado apenas no Caso III.</ul>
                           <ul>- DS retorna dados do ativo solicitado.</ul>
                           <ul>- Sistema gera e exibe o gráfico.</li></ul></ol>
-
+     </ul>
 <p><strong>Caso III:</strong></p>
      <ul>Objetivo: Alterar o período do gráfico exibido.</ul>
      <ul>Requisitos: Tela do gráfico estar aberta.</ul>
@@ -45,7 +45,9 @@
      width="50%" 
      style="padding: 10px">
 </p>
+
 ## Diagrama de Classes
+
 <p align="left">
     <img src="https://github.com/user-attachments/assets/c29391fc-50e3-46a5-a359-7e2028bc83c4" alt="Diagrama de Classes"
      width="50%" 
