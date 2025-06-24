@@ -5,7 +5,7 @@
 
 O proograma visa compilar informações a respeito da variação do valor de ativos financeiros, apresentando dados históricos e gráficos representativos.
 Utilizarei a chave de API Tiingo disponível em <https://www.tiingo.com/>.
-O sistema deverá oferecer uma seleção de ativos para o usuário que ao selecionar o ativo será encaminhado para um gráfico onde ele poderá selecionar o período que deseja visualizar as variações de mercado. O período padrão de visualização ao entrar no gráfico será o do dia atual. 
+O sistema deverá oferecer uma seleção de ativos para o usuário que ao selecionar o ativo será encaminhado para um gráfico onde ele poderá selecionar o período que deseja visualizar as variações de mercado. O período padrão de visualização ao entrar no gráfico será o do dia atual, mas no gráfico o usuário terá a opção de selecionar outro período. 
 
 ## Diagrama de Domínio do problema
 
