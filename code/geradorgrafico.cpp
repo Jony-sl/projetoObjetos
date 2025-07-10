@@ -25,7 +25,7 @@ QChart* GeradorGrafico::montarGrafico(const Ativo& ativo, const QVector<double>&
     QValueAxis* eixoX = reinterpret_cast<QValueAxis*>(chart->axes(Qt::Horizontal).first());
     if (eixoX) eixoX->setTitleText("Dias");
     QValueAxis* eixoY = reinterpret_cast<QValueAxis*>(chart->axes(Qt::Vertical).first());
-    if (eixoY) eixoY->setTitleText("Preço (R$)");
+    if (eixoY) eixoY->setTitleText("Preço (USD)");
 
     return chart;
 }

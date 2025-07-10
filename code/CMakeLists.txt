@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Encontra os módulos necessários do Qt6
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Charts)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Charts Network)
 
 qt_standard_project_setup()
 
@@ -35,5 +35,10 @@ qt_add_executable(objetos_agora_vai
 
 # Linka com os módulos Qt corretos (inclusive Charts!)
 target_link_libraries(objetos_agora_vai
-    PRIVATE Qt::Core Qt::Widgets Qt::Charts
+    PRIVATE
+        Qt6::Core
+        Qt6::Gui
+        Qt6::Widgets
+        Qt6::Charts
+        Qt6::Network
 )

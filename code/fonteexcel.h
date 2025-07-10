@@ -2,6 +2,9 @@
 #define FONTEEXCEL_H
 
 #include "fontededados.h"
+#include "ativo.h"
+#include "periodo.h"
+#include <QVector>
 
 class FonteExcel : public FonteDeDados {
 public:

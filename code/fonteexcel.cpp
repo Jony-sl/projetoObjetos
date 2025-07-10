@@ -1,16 +1,58 @@
 #include "fonteexcel.h"
-#include <QRandomGenerator>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QEventLoop>
+#include <QTextStream>
+#include <QUrl>
+#include <QDebug>
 
 QVector<double> FonteExcel::obterDados(const Ativo& ativo, const Periodo& periodo) {
-    int dias = periodo.numeroDeDias();
     QVector<double> dados;
 
-    double preco = 10.0 + QRandomGenerator::global()->generateDouble() * 50.0;
-    for (int i = 0; i < dias; ++i) {
-        double delta = QRandomGenerator::global()->generateDouble() * 4.0 - 2.0; // entre -2 e +2
-        preco += delta;
-        dados.append(preco);
+    // Extrai informações do ativo e do período
+    QString ticker = ativo.getNome().toUpper().trimmed(); // Ex: "AAPL", "BLK", "TSLA"
+    QString startDate = periodo.getInicio().toString("yyyy-MM-dd");
+    QString endDate = periodo.getFim().toString("yyyy-MM-dd");
+
+    // Monta a URL da API Tiingo
+    QString url = QString("https://api.tiingo.com/tiingo/daily/%1/prices?startDate=%2&endDate=%3&format=csv&token=CHAVE_AQUI")
+                      .arg(ticker).arg(startDate).arg(endDate);
+
+    qDebug() << "🔍 Requisitando dados para:" << ticker;
+    qDebug() << "🌐 URL da API:" << url;
+
+    QNetworkAccessManager manager;
+    QNetworkRequest request{QUrl(url)};
+    QNetworkReply* reply = manager.get(request);
+
+    // Espera pela resposta da API
+    QEventLoop loop;
+    QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    loop.exec();
+
+    if (reply->error() == QNetworkReply::NoError) {
+        QByteArray csvData = reply->readAll();
+        QTextStream stream(csvData);
+        stream.readLine(); // ignora o cabeçalho
+
+        while (!stream.atEnd()) {
+            QString line = stream.readLine();
+            QStringList columns = line.split(",");
+            if (columns.size() >= 5) {
+                bool ok = false;
+                double closePrice = columns[4].toDouble(&ok); // Coluna "close"
+                if (ok) {
+                    dados.append(closePrice);
+                }
+            }
+        }
+
+        qDebug() << "✅ Preços recebidos:" << dados.size();
+    } else {
+        qDebug() << "❌ Erro na requisição para o ticker" << ticker << ":" << reply->errorString();
     }
 
+    reply->deleteLater();
     return dados;
 }
