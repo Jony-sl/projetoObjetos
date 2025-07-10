@@ -18,5 +18,6 @@ void ControladorGrafico::alterarPeriodo(const Periodo& periodo) {
 QChartView* ControladorGrafico::gerarGrafico() {
     if (!ativoFoiSelecionado) return nullptr;
     QVector<double> dados = fonte->obterDados(ativoSelecionado, periodoSelecionado);
-    return gerador.gerar(ativoSelecionado, dados);
+    return gerador.gerar(ativoSelecionado, dados, periodoSelecionado.getInicio());
+
 }

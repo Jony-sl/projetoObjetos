@@ -16,7 +16,7 @@ QVector<double> FonteExcel::obterDados(const Ativo& ativo, const Periodo& period
     QString endDate = periodo.getFim().toString("yyyy-MM-dd");
 
     // Monta a URL da API Tiingo
-    QString url = QString("https://api.tiingo.com/tiingo/daily/%1/prices?startDate=%2&endDate=%3&format=csv&token=CHAVE_AQUI")
+    QString url = QString("https://api.tiingo.com/tiingo/daily/%1/prices?startDate=%2&endDate=%3&format=csv&token=d081476625726d7694d1f55990c28cd4ac6c01c6")
                       .arg(ticker).arg(startDate).arg(endDate);
 
     qDebug() << "🔍 Requisitando dados para:" << ticker;
