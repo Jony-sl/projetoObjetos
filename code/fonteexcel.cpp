@@ -11,7 +11,7 @@ QVector<double> FonteExcel::obterDados(const Ativo& ativo, const Periodo& period
     QVector<double> dados;
 
     // Extrai informações do ativo e do período
-    QString ticker = ativo.getNome().toUpper().trimmed(); // Ex: "AAPL", "BLK", "TSLA"
+    QString ticker = ativo.getTicker().toUpper().trimmed(); // Ex: "AAPL", "BLK", "TSLA"
     QString startDate = periodo.getInicio().toString("yyyy-MM-dd");
     QString endDate = periodo.getFim().toString("yyyy-MM-dd");
 
@@ -19,8 +19,8 @@ QVector<double> FonteExcel::obterDados(const Ativo& ativo, const Periodo& period
     QString url = QString("https://api.tiingo.com/tiingo/daily/%1/prices?startDate=%2&endDate=%3&format=csv&token=d081476625726d7694d1f55990c28cd4ac6c01c6")
                       .arg(ticker).arg(startDate).arg(endDate);
 
-    qDebug() << "🔍 Requisitando dados para:" << ticker;
-    qDebug() << "🌐 URL da API:" << url;
+    qDebug() << "Requisitando dados para:" << ticker;
+    qDebug() << "URL da API:" << url;
 
     QNetworkAccessManager manager;
     QNetworkRequest request{QUrl(url)};
@@ -48,9 +48,9 @@ QVector<double> FonteExcel::obterDados(const Ativo& ativo, const Periodo& period
             }
         }
 
-        qDebug() << "✅ Preços recebidos:" << dados.size();
+        qDebug() << "Preços recebidos:" << dados.size();
     } else {
-        qDebug() << "❌ Erro na requisição para o ticker" << ticker << ":" << reply->errorString();
+        qDebug() << "Erro na requisição para o ticker" << ticker << ":" << reply->errorString();
     }
 
     reply->deleteLater();

@@ -22,9 +22,11 @@ void MainWindow::configurarInterface()
     setCentralWidget(central);
 
     comboBoxAtivos = new QComboBox(this);
-    comboBoxAtivos->addItem("Empresa XPTO", "XPTO3");
-    comboBoxAtivos->addItem("Petrobras", "PETR4");
-    comboBoxAtivos->addItem("Vale", "VALE3");
+    comboBoxAtivos->addItem("Empresa Apple", "AAPL");
+    comboBoxAtivos->addItem("Pineapple Inc", "PNPL");
+    comboBoxAtivos->addItem("Vale", "VALE");
+    comboBoxAtivos->addItem("Texas Inst", "TXN");
+    comboBoxAtivos->addItem("Nvidia Corp", "NVDA");
 
     dateEditInicio = new QDateEdit(QDate::currentDate().addDays(-10), this);
     dateEditFim = new QDateEdit(QDate::currentDate(), this);
@@ -41,14 +43,14 @@ void MainWindow::configurarInterface()
 
     central->setLayout(layoutPrincipal);
 
-    controlador->selecionarAtivo(Ativo("Empresa XPTO", "XPTO3"));
+    controlador->selecionarAtivo(Ativo("Nvidia Corp", "NVDA"));
     controlador->alterarPeriodo(Periodo(dateEditInicio->date(), dateEditFim->date()));
 }
 
 void MainWindow::conectarSinais()
 {
     connect(comboBoxAtivos, &QComboBox::currentIndexChanged, this, [=]() {
-        QString nome = comboBoxAtivos->currentText();
+        QString nome = comboBoxAtivos->currentText();//currentText();
         QString ticker = comboBoxAtivos->currentData().toString();
         controlador->selecionarAtivo(Ativo(nome, ticker));
         atualizarGrafico();
