@@ -1,8 +1,7 @@
 # Testes
 
 >[!NOTE]
-> Relatar o processo de testes do sistema, especificando quais testes foram 
-> realizados e os resultados obtidos.
+O sistema foi testado rodando o programa e selecionando diferentes ativos em diferentes períodos e então comparando os resultados com os dados dos ativos disponiveis na internet em outros sites (ex: https://finance.yahoo.com/).
 
 <div align="center">
 
