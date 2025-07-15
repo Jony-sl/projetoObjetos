@@ -49,11 +49,10 @@
 ## Diagrama de Classes
 
 <p align="left">
-    <img src=""
+    <img src="https://github.com/user-attachments/assets/91eafabb-f71d-4a43-adb0-850c8d4ce6d6"
      width="50%" 
      style="padding: 10px">
 </p>
-
 
 
 <div align="center">
