@@ -8,6 +8,7 @@ Para implementação do código foi utilizada a biblioteca do Qt. Os principais 
 > - Qt Network (comunicação com a API da Tiingo via HTTP);
 <ul> A utilização do Qt Creator foi a escolha para esse projeto.
 O principal desafio do projeto foi a correta utilização da API e sua declaração, é necessário a obtenção de uma chave, neste caso solicitei uma chave de estudante na Tiingo para o projeto. Na linha 19 do arquivo fonteexcel.cpp deve-se incluir a chave no lugar do "Key here". </ul>
+<ul>Para incrementar a variedade de ativos basta ir no arquivo mainwindow.cpp linha 30 e colocal a linha "comboBoxAtivos->addItem("Nvidia Corp", "NVDA");" substituindo o nome do ativo e o ticker.</ul>
 <ul>API utilizado disponível em https://www.tiingo.com/</ul>
 
 <div align="center">
